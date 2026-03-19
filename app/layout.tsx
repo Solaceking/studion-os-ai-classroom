@@ -17,9 +17,9 @@ const inter = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'OpenMAIC',
+  title: 'Professor K Classroom',
   description:
-    'The open-source AI interactive classroom. Upload a PDF to instantly generate an immersive, multi-agent learning experience.',
+    'Professor K Classroom is a multi-agent learning studio that turns your materials into immersive, interactive classroom experiences.',
 };
 
 export default function RootLayout({
@@ -44,3 +44,4 @@ export default function RootLayout({
     </html>
   );
 }
+
