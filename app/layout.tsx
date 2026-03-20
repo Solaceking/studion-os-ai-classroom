@@ -17,9 +17,9 @@ const inter = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Professor K Classroom',
+  title: 'Studion OS AI Classroom',
   description:
-    'Professor K Classroom is a multi-agent learning studio that turns your materials into immersive, interactive classroom experiences.',
+    'Studion OS AI Classroom is a multi-agent learning studio that turns your materials into immersive, interactive classroom experiences.',
 };
 
 export default function RootLayout({
@@ -44,4 +44,5 @@ export default function RootLayout({
     </html>
   );
 }
+
 

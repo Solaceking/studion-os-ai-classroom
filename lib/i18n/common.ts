@@ -6,7 +6,7 @@ export const commonZhCN = {
     loading: '加载中...',
   },
   home: {
-    slogan: 'Professor K Classroom · Multi-Agent Interactive Learning',
+    slogan: 'Studion OS AI Classroom · Multi-Agent Interactive Learning',
     greeting: '嗨，',
   },
   toolbar: {
@@ -47,7 +47,7 @@ export const commonEnUS = {
     loading: 'Loading...',
   },
   home: {
-    slogan: 'Professor K Classroom · Multi-Agent Interactive Learning',
+    slogan: 'Studion OS AI Classroom · Multi-Agent Interactive Learning',
     greeting: 'Hi, ',
   },
   toolbar: {
@@ -79,4 +79,5 @@ export const commonEnUS = {
     exportFailed: 'Export failed',
   },
 } as const;
+
 
