@@ -58,5 +58,8 @@ next-env.d.ts
 /logs
 
 # docs
-/docs
+
+
+
+!.env.production.example
 

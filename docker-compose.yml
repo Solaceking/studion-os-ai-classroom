@@ -4,7 +4,7 @@ services:
     ports:
       - "3000:3000"
     env_file:
-      - .env.local
+      - .env.production
     volumes:
       # Optional: mount server-providers.yml for provider config
       # - ./server-providers.yml:/app/server-providers.yml:ro
@@ -13,4 +13,5 @@ services:
 
 volumes:
   studion-classroom-data:
+
 

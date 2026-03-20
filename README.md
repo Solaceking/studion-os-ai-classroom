@@ -63,3 +63,13 @@ See `docs/STUDION-UI-INTEGRATION.md` for an implementation guide.
 ## License
 
 AGPL-3.0 (inherits upstream license).
+
+## Production Hosting
+
+Use this service as a hosted engine behind Studion OS (not local-only).
+
+- Production env template: .env.production.example
+- Hosting/auth guide: docs/PRODUCTION-HOSTING.md
+- Studion adapter guide: STUDION-UI-INTEGRATION.md
+
+

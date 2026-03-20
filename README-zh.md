@@ -60,3 +60,13 @@ pnpm build && pnpm start
 ## License
 
 AGPL-3.0（继承上游许可）。
+
+## 生产部署
+
+建议将本服务作为 Studion OS 后端引擎独立托管（不是仅本地运行）。
+
+- 生产环境模板：.env.production.example
+- 托管与鉴权说明：docs/PRODUCTION-HOSTING.md
+- Studion 对接说明：STUDION-UI-INTEGRATION.md
+
+
