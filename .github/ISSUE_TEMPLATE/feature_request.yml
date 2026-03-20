@@ -43,7 +43,7 @@ body:
         - Quiz / Assessment
         - TTS / Voice
         - Interactive simulations
-        - OpenClaw integration
+        - Classroom generation pipeline
         - UI / UX
         - API / Backend
         - Documentation
@@ -56,3 +56,4 @@ body:
     attributes:
       label: Additional Context
       description: Add any mockups, screenshots, or references that help explain the feature.
+
