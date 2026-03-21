@@ -67,3 +67,7 @@ Keep only what serves the Studion experience:
 - Replace visible product copy with `Studion OS AI Classroom`
 - Keep technical route names stable initially (`/api/generate-classroom`) to avoid migration risk
 - Add API versioning only after first successful production usage
+
+## Known Engine Behaviours
+
+- **Language detection override:** The underlying GLM model ignores the language field when it detects that the requirement text itself is written in a non-English language (observed: Chinese topic ? Chinese-language scenes regardless of "language": "en"). Workaround: write the requirement prompt in the desired output language. This is a model-level behaviour and cannot be overridden via API parameters.
