@@ -40,6 +40,12 @@ RUN apk add --no-cache libc6-compat cairo pango jpeg giflib librsvg
 RUN addgroup --system --gid 1001 nodejs && \
     adduser --system --uid 1001 nextjs
 
+# Create the data directory and give the nextjs user ownership before the volume
+# is mounted.  Docker initialises a *new* named volume by copying this directory
+# (including ownership) from the image, so permissions survive container rebuilds.
+# Uses numeric ids to match the runtime uid/gid exactly (nextjs=1001, nogroup=65533).
+RUN mkdir -p /app/data && chown -R 1001:65533 /app/data && chmod 755 /app/data
+
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
